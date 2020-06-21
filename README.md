@@ -12,3 +12,5 @@ In order to run the examples in the "sqlalchemy_examples.ipnyb" notebook, you ne
 - The following libraries installed
     - SQLAlchemy
     - Faker
+    
+This repository also includes a database checker utility (db_checker.py) that can be used to verify database schema prior to interacting with it.
