@@ -1,0 +1,14 @@
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# editor related
+.idea
+
+# virtualenv
+venv/
+
+# OS droppings
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
