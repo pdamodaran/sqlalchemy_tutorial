@@ -5,6 +5,9 @@ from sqlalchemy.orm import sessionmaker
 from contextlib import contextmanager
 
 import warnings
+
+from db_checker import DBChecker
+
 warnings.filterwarnings('ignore')
 
 from data_model import Base
@@ -36,11 +39,11 @@ class DBDriver:
 
     @staticmethod
     def get_connection_string():
-        host = os.environ["DB_HOST"]
-        port = os.environ["DB_PORT"]
-        user = os.environ["DB_USER"]
-        password = os.environ["DB_PASS"]
-        dbname = os.environ["DB"]
+        host = os.environ["POSTGRES_HOST"]
+        port = os.environ["POSTGRES_PORT"]
+        user = os.environ["POSTGRES_USER"]
+        password = os.environ["POSTGRES_PASSWORD"]
+        dbname = os.environ["POSTGRES_DB"]
 
         connection_string = "{}://{}:{}@{}:{}/{}".format(
             "postgresql", user, password, host, port, dbname
@@ -61,4 +64,6 @@ class DBDriver:
 if __name__ == "__main__":
     dbdriver = DBDriver()
     dbdriver.create_tables()
+    dbchecker = DBChecker(dbdriver.engine)
+    dbchecker.check_db()
     dbdriver.load_data()

@@ -14,6 +14,7 @@ class DBChecker:
         self.database_tables = self.engine.table_names()
 
     def check_db(self):
+        print("checking tables...")
         mapped_tables = DBChecker.get_mapped_tables()
         for mapped_table in mapped_tables:
             self.does_table_match(mapped_table)
