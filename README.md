@@ -1,6 +1,6 @@
-[![CI Workflow](https://github.com/pdamodaran/sqlalchemy_tutorial/actions/workflows/workflow.yml/badge.svg)](https://github.com/pdamodaran/sqlalchemy_tutorial/actions/workflows/workflow.yml)
-
 ## SQLAlchemy Examples
+
+[![CI Workflow](https://github.com/pdamodaran/sqlalchemy_tutorial/actions/workflows/workflow.yml/badge.svg?branch=main)](https://github.com/pdamodaran/sqlalchemy_tutorial/actions/workflows/workflow.yml)
 
 In order to run the examples in the "sqlalchemy_examples.ipnyb" notebook, you need the following:
 
