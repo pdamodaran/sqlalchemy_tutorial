@@ -1,4 +1,4 @@
-[![CI Workflow](https://github.com/pdamodaran/sqlalchemy_tutorial/actions/workflows/workflow.yml/badge.svg?branch=main&event=pull_request)](https://github.com/pdamodaran/sqlalchemy_tutorial/actions/workflows/workflow.yml)
+[![CI Workflow](https://github.com/pdamodaran/sqlalchemy_tutorial/actions/workflows/workflow.yml/badge.svg)](https://github.com/pdamodaran/sqlalchemy_tutorial/actions/workflows/workflow.yml)
 
 ## SQLAlchemy Examples
 
