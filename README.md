@@ -1,3 +1,5 @@
+[![Python package](https://github.com/pdamodaran/sqlalchemy_tutorial/actions/workflows/workflow.yml/badge.svg)](https://github.com/pdamodaran/sqlalchemy_tutorial/actions/workflows/workflow.yml)
+
 ## SQLAlchemy Examples
 
 In order to run the examples in the "sqlalchemy_examples.ipnyb" notebook, you need the following:
