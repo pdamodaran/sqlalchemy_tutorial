@@ -1,6 +1,5 @@
 name: CI Workflow
 
-
 on: [pull_request]
 
 jobs:
