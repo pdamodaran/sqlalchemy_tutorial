@@ -1,14 +1,11 @@
-name: Python package
+name: Lint
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
-  slackNotification:
-    name: Slack Notification
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Slack Notification
-        uses: rtCamp/action-slack-notify@v2
-        env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      - uses: actions/setup-python@v2
+      - uses: psf/black@stable
